@@ -43,7 +43,7 @@ function Events() {
       title: "TechXhibit",
       icon: PresentationScreen,
       description: "Showcase your innovative technical projects",
-      image: "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&q=80&w=800",
+      image: "https://media.istockphoto.com/id/1641611860/photo/asian-event-participants-guest-registering-at-reception-desk-attending-business-conference.webp?a=1&b=1&s=612x612&w=0&k=20&c=o9CJ1XSYSqoKm55uhnku4H2wnCuiYPwFZymwaqL7WmY=",
       link: 'https://forms.gle/quYXbcFWX4H1VLVq9',
       members: "Team of 2",
       fee: "₹200",
