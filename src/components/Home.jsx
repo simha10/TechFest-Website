@@ -89,7 +89,7 @@ function Home({ scrollToSection }) {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-lg md:text-l mb-8 text-white px-6"
         >
-          The Department of <span className="text-pink-600 font-bold">Computer Science & Engineering</span> at <span className="text-pink-600 font-bold">Sir C R Reddy College of Engineering</span> presents an electrifying blend of technical and non-technical events that will challenge your creativity, innovation, and skills.
+          The Department of <span className="text-pink-600 font-bold">Computer Science & Engineering</span> at <span className="text-pink-600 font-bold">Sir C R Reddy College of Engineering </span> <span className="text-yellow-500 font-bold">(Autonomous)</span> presents an electrifying blend of technical and non-technical events that will challenge your creativity, innovation, and skills.
         </motion.p>
 
         {/* Event Details */}

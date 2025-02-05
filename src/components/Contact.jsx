@@ -25,9 +25,9 @@ function Contact() {
       title2 : 'Convener of Celestra-2k25',
       fac2 : 'Dr. A. yesu Babu (HOD of CSE)',
       title3 : 'Faculty Co-ordinators',
-      fac5 : 'Dr. K. N. Madhavi Latha (Associate Professor)',
-      fac3 : 'V. Pranav : +91 9966558636 (Assisatant Professor)',
-      fac4 : 'M. Ganesh Babu :+91 9948027644 (Assistant Professor)',
+      fac3 : 'Dr. K. N. Madhavi Latha (Associate Professor)',
+      fac4 : 'V. Pranav : +91 9966558636 (Assisatant Professor)',
+      fac5 : 'M. Ganesh Babu :+91 9948027644 (Assistant Professor)',
     },
     {
       title : 'Student Co-ordinators',
