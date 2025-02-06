@@ -36,7 +36,7 @@ function About() {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {[
-            { icon: Calendar, title: "Event Date", desc: "March 4th 2025" },
+            { icon: Calendar, title: "Event Date", desc: "Feb 28th 2025" },
             { icon: Users, title: "5000+", desc: "Expected Participants" },
             { icon: Trophy, title: "20+", desc: "Exciting Events" }
           ].map(({ icon: Icon, title, desc }, index) => (

@@ -67,6 +67,14 @@ function Home({ scrollToSection }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
+          className="text-5xl md:text-3xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent tracking-wide"
+        >
+          Sir C R Reddy College of Engineering <span className="text-yellow-500 font-bold">(Autonomous)</span>
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="text-5xl md:text-7xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 to-blue-600 bg-clip-text text-transparent tracking-wide"
         >
           CELESTRA 2K25
@@ -89,7 +97,7 @@ function Home({ scrollToSection }) {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-lg md:text-l mb-8 text-white px-6"
         >
-          The Department of <span className="text-pink-600 font-bold">Computer Science & Engineering</span> at <span className="text-pink-600 font-bold">Sir C R Reddy College of Engineering </span> <span className="text-yellow-500 font-bold">(Autonomous)</span> presents an electrifying blend of technical and non-technical events that will challenge your creativity, innovation, and skills.
+          The Department of <span className="text-pink-600 font-bold">Computer Science & Engineering</span> at <span className="text-pink-600 font-bold">Sir C R Reddy College of Engineering </span> presents an electrifying blend of technical and non-technical events that will challenge your creativity, innovation, and skills.
         </motion.p>
 
         {/* Event Details */}
@@ -99,8 +107,9 @@ function Home({ scrollToSection }) {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-lg md:text-xl text-white mb-6"
         >
-          📅 Event Date: <span className="text-red-400 font-bold">March 4, 2025</span> <br />
-          ⏳ Registration Deadline: <span className="text-red-400 font-bold">March 3, 2025</span>
+              Event Date: <span className="text-red-400 font-bold">28th Feb, 2025</span> <br />
+          ⏳ Registration Deadline: <span className="text-red-400 font-bold">27th Feb, 2025</span><br/>
+              Event Venue : <span className="text-red-400 font-bold">Department of CSE</span>
         </motion.p>
 
         <motion.p
