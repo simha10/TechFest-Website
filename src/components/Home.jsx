@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-marquee-slider";
 import { motion } from "framer-motion";
 import { Sparkles, Star, } from "lucide-react";
 
@@ -109,7 +110,11 @@ function Home({ scrollToSection }) {
         >
               Event Date: <span className="text-red-400 font-bold">28th Feb, 2025</span> <br />
           ⏳ Registration Deadline: <span className="text-red-400 font-bold">27th Feb, 2025</span><br/>
-              Event Venue : <span className="text-red-400 font-bold">Department of CSE</span>
+              Event Venue : <span className="text-red-400 font-bold">Department of CSE</span><br/><br/>
+              <div className="border-2 border-gray-400 p-2 rounded-lg">
+              Free bus facility for participants can be available from :<br/>
+              <marquee behavior="" direction="">Vijayawada, Nuzvid, Katrenipadu, Kaikaluru, Kamavarapu kota, Bhimadolu, Jalipudi, Kondalarao Palem, Dharmaji Gudem, GunduGolanu, Galayagudem, Gudivada </marquee>
+              </div>
         </motion.p>
 
         <motion.p

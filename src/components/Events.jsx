@@ -69,7 +69,7 @@ function Events() {
     {
       title: "Paper Presentation",
       icon: PresentationScreen,
-      description: "Present your research and ideas",
+      description: "Present your technical innovative ideas",
       image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
       link : 'https://forms.gle/Q79kapyTyv9dNqr29',
       members: "Team of 2",
@@ -99,7 +99,7 @@ function Events() {
     {
       title: "Sight on Site",
       icon: Trophy,
-      description: "On-spot photography competition",
+      description: "The Ultimate Visual Challenge.",
       image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&q=80&w=800",
       link : 'https://forms.gle/yubQ1Fs9XpNkN3VD6',
       members: "Individual",
