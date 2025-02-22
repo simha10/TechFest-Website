@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .hidden-on-phone {
+    display: none;
+  }
+}

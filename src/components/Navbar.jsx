@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Menu, X } from 'lucide-react';
+import './Navbar.css'; // Import the CSS file
 
 function Navbar({ activeSection, setActiveSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ function Navbar({ activeSection, setActiveSection }) {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.8 }}
-      className="sticky top-0 z-50 bg-black/30 backdrop-blur-md"
+      className="sticky top-0 z-50 bg-black/30 backdrop-blur-md hidden-on-phone" // Add the class here
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -47,11 +48,10 @@ function Navbar({ activeSection, setActiveSection }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => setActiveSection(item)}
-                className={`capitalize ${
-                  activeSection === item
+                className={`capitalize ${activeSection === item
                     ? 'text-purple-400 border-b-2 border-purple-400'
                     : 'text-gray-300 hover:text-purple-400'
-                } transition-colors duration-200`}
+                  } transition-colors duration-200`}
               >
                 {item}
               </motion.button>
@@ -74,11 +74,10 @@ function Navbar({ activeSection, setActiveSection }) {
                   setActiveSection(item);
                   setIsMenuOpen(false);
                 }}
-                className={`block w-full text-left px-4 py-2 capitalize ${
-                  activeSection === item
+                className={`block w-full text-left px-4 py-2 capitalize ${activeSection === item
                     ? 'text-purple-400 bg-white/5'
                     : 'text-gray-300 hover:text-purple-400'
-                } transition-colors duration-200`}
+                  } transition-colors duration-200`}
               >
                 {item}
               </motion.button>

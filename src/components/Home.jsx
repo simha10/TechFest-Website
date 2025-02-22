@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Star, } from "lucide-react";
+import { Sparkles, Star } from "lucide-react";
+import Popup from "./Popup";
 
 function Home({ scrollToSection }) {
+  const [showPopup, setShowPopup] = useState(true);
 
-  const HnadleRegisterClick = () => {
-    console.log("working")
+  const handleRegisterClick = () => {
+    console.log("working");
     scrollToSection('events');
-  }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center relative overflow-hidden px-4 text-white">
+      {showPopup && (
+        <Popup
+          message="Unfortunately, due to some political election issues, the event is postponed from 28th Feb to 7th March."
+          onClose={handleClosePopup}
+        />
+      )}
       {/* Background Stars Animation */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(20)].map((_, i) => (
@@ -107,14 +123,14 @@ function Home({ scrollToSection }) {
           transition={{ duration: 0.8, delay: 1 }}
           className="text-lg md:text-xl text-white mb-6"
         >
-              Event Date: <span className="drop text-red-400 font-bold">7th March, 2025</span> <br />
-          ⏳ Registration Deadline: <span className="text-red-400 font-bold">6th March, 2025</span><br/>
-              Event Venue : <span className="text-red-400 font-bold">Department of CSE</span><br/><br/>
-              <div className="border-2 border-gray-400 p-2 rounded-lg">
-              Free bus facility for participants can be available from :<br/>
-              <span className="inline-block animate-pulse text-red-400 font-bold"><marquee behavior="" direction="">Vijayawada, Nuzvid, Katrenipadu, Kaikaluru, Kamavarapu kota, Bhimadolu, Jalipudi, Kondalarao Palem, Dharmaji Gudem, GunduGolanu, Galayagudem, Gudivada </marquee></span>
-              </div>
+          Event Date: <span className="text-red-400 font-bold">7th March, 2025</span> <br />
+          ⏳ Registration Deadline: <span className="text-red-400 font-bold">6th March, 2025</span><br />
+          Event Venue : <span className="text-red-400 font-bold">Department of CSE</span><br /><br />
         </motion.p>
+        <div className="border-2 border-gray-400 p-2 rounded-lg">
+          Free bus facility for participants can be available from :<br />
+          <span className="inline-block animate-pulse text-red-400 font-bold"><marquee behavior="" direction="">Vijayawada, Nuzvid, Katrenipadu, Kaikaluru, Kamavarapu kota, Bhimadolu, Jalipudi, Kondalarao Palem, Dharmaji Gudem, GunduGolanu, Galayagudem, Gudivada </marquee></span>
+        </div>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -127,7 +143,7 @@ function Home({ scrollToSection }) {
 
         {/* Call to Action Button */}
         <motion.button
-          onClick={HnadleRegisterClick}
+          onClick={handleRegisterClick}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.2 }}
