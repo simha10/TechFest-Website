@@ -20,3 +20,23 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+.drop {
+  position: relative; /* To allow positioning */
+  animation: drop-animation 2s linear 2s infinite; /* Applying the animation */
+}
+
+/* Keyframes for the dropping effect */
+@keyframes drop-animation {
+  0% {
+      font-size: 20px; /* Start from above the viewport */
+      opacity: 0; /* Start invisible */
+  }
+  80% {
+      opacity: 1;
+      font-size: 25px; /* Become visible */
+  }
+  100% {
+      font-size: 30px; /* Drop to the original position */
+  }
+}
